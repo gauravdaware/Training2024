@@ -1,0 +1,6 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="sales_order_view"/>
+    <referenceContainer name="payment_additional_info">
+        <block class="I95Dev\PoNumber\Block\Adminhtml\Info" name="purchase_order_number" template="I95Dev_PoNumber::info/purchaseorder.phtml" />
+    </referenceContainer>
+</page>

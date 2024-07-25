@@ -1,0 +1,21 @@
+<?php
+/**
+* Copyright © Magento, Inc. All rights reserved.
+* See COPYING.txt for license details.
+*/
+/**
+* @var $block \I95Dev\PoNumber\Block\Adminhtml\Info
+*/
+?>
+<br>
+<?php $data = $block->getPurchaseOrderNumber(); ?>
+<?php if($data['method'] != 'purchaseorder'){ ?>
+<table class="data-table admin__table-secondary">
+    <tr>
+        <th><?= $block->escapeHtml(__('Purchase Order Number')) ?>:</th>
+        <td>
+            <?= $data['po_number'] ? $block->escapeHtml($data['po_number']) : __('Purchase Order Number not available.') ?>
+        </td>
+    </tr>
+</table>
+<?php } ?>

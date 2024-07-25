@@ -1,0 +1,31 @@
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+$order = $block->getOrder();
+?>
+<!--    <p>Preferred Contact: --><?php //= ucfirst($order->getPreferredContact()) ?><!--</p>-->
+    <!-- Add your custom content here -->
+<!---->
+<!--<table class="admin__table-secondary order-information-table">-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--        <th>Preferred Contact</th>-->
+<!--        <td>--><?php //= ucfirst($order->getPreferredContact()) ?><!--</td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<div class="admin__page-section-item order-info-method">
+    <div class="admin__page-section-item-title">
+        <span class="title">Contact Note</span>
+    </div>
+    <div class="admin__page-section-item-content">
+        <div class="order-payment-method-title">
+<!--            <div class="order-payment-method-name">Contact Note</div>-->
+            <table class="data-table admin__table-secondary" style="width: 50%">
+                <tbody><tr>
+                    <th>Preferred Contact:</th>
+                    <td><?= ucfirst($order->getPreferredContact()) ?></td>
+                </tr>
+                </tbody></table>
+        </div>
+    </div>
+</div>
