@@ -8,4 +8,5 @@
 <!--    <extension_attributes for="Magento\Sales\Api\Data\OrderInterface">-->
 <!--        <attribute code="preferred_contact" type="string"/>-->
 <!--    </extension_attributes>-->
+<!--    test-->
 </config>
